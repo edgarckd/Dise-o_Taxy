@@ -1,7 +1,7 @@
 from socketserver import BaseRequestHandler, UDPServer
 import time
 import mysql.connector
-cnn = mysql.connector.connect(host="localhost", user = "root", passwd = "HanbookRadar97", database="diseno")
+cnn = mysql.connector.connect(host="database-1.cenhvg7ksmup.us-east-1.rds.amazonaws.com", user = "admin", passwd = "HanbookRadar97", database="ubicacion")
 
 
 class GestorSolicitudesHora(BaseRequestHandler):
